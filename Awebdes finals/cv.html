@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alycia Mae P. Cabus - Curriculum Vitae</title>
+   
+    <style>
+        * {
+            margin: 0 auto;
+            margin-top: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+
+        body {
+            background-color: #686D76;
+            background-size: cover;
+            background-attachment:fixed;
+            padding-top: 1px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 50px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: #363232;
+        }
+        header h2 {
+            color: #fff;
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .navigation {
+            margin-left: -150px; 
+        }
+
+        .navigation a {
+            font-size: 1.1em;
+            color: #333;
+            text-decoration: none;
+            margin-right: 30px; 
+            font-weight: 500;
+            transition: .3s;
+        }
+
+        .navigation a:hover {
+            color: #2e7d32;
+        }
+
+        .btn-talk {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 40px; 
+            background: linear-gradient(to right, #ff9800, #f57c00);
+            border-radius: 10px;
+            border: 2px solid #f57c00;
+            font-weight: 500;
+            transition: .3s;
+            margin-right:10px;
+               font-size: 25px;
+        }
+
+        .btn-talk:hover {
+            color: #f57c00;
+            background: transparent;
+        }
+
+        .home {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: block;
+            align-items: center;
+            padding: 50px 100px; 
+        }
+
+        .content {
+            flex: 1;
+            width: 100%; 
+            color: #ffffff;
+            margin-top: 7rem; 
+            text-align: justify;
+            font-size: 24px;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-top: 20px; 
+        }
+
+        .content h2 span {
+            color: #eeebe8; 
+        }
+        
+
+        .content h4 {
+            font-size: 1.8em;
+            color: #c27b11;
+            margin-top: 10px; 
+        }
+
+        .content p {
+            padding: 20px 0 30px 0;
+            line-height: 30px;
+            color:#ece6e6;
+        }
+
+        img{
+            width: 290px;
+            height: 480px;
+            border-radius: 50px;
+            border-style: double;
+            margin-left: 700px;
+            margin-bottom: 30px;
+            align-items: center;
+            
+        }
+
+        .btn-group a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 45px; 
+            background: linear-gradient(to right, #ff9800, #f57c00); 
+            border-radius: 10px;
+            border: 2px solid #f57c00;
+            font-weight: 500;
+            transition: .3s;
+        }
+
+        .btn-group a:hover {
+            color: #f57c00;
+            background: transparent;
+        }
+
+        h2{
+            font-size: 50px;
+            color: #fdfcfc;
+            margin-left: 10px;
+        }
+        
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 24px;
+            font-weight:lighter;
+        }
+        table{
+            align-content: center;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            max-width: 2500px;
+        }
+           
+        td a{
+            text-decoration:none;
+            color: white;
+        }
+        td a:hover{
+            color: orange;
+        }
+        .proj{
+            max-width: 900%;
+            margin: 20px;
+        }
+        .proj img{
+            height: 400px;
+            width: 350px;
+            margin: 10px;
+            border-radius: 0px;
+            cursor: pointer; 
+           
+        }
+
+        
+        .image-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+ 
+        }
+
+        .image-overlay.active {
+            opacity: 3;
+            visibility: visible;
+             display: flex;
+        }
+
+        .image-overlay img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            cursor: zoom-out; 
+            align-items: center;
+            height: auto;
+            width: auto;
+          display: flex;
+          margin-left: 35%;
+          margin-top: 30px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Curriculum Vitae Website <sup>&reg;</sup></h2>       
+        <a href="index.html" class="btn-talk">EXIT</a>
+    </header>
+    <section class="home">
+        <div class="content">
+            <img style="line-height: 30px; display:block; margin-left: auto; margin-right:auto; max-width: 100%; height: auto; " src="img/prof.jpg">
+            <br>
+            <h1 style="font-size: 54px; line-height: 0px;">ALYCIA MAE P. CABUS</h1> 
+            <p style="line-height: 38px;font-size:30px;">Tubigon Sibulan Negros Oriental <br> cabusalycia@gmail.com <br> 09938954164</p><br><br>
+            <h2 style="line-height: 0px;">CAREER OBJECTIVE</h2><br>
+            <p style="text-indent: 100px; text-align: justify;">To accommodate more priceless knowledge and cultivate more abilities in complementing those that I have gained from school in a real-task environment, I herewith offer my duty and determination to work and become an asset to your institution with excellent passion throughout the given duration of my training period.</p>
+            <br>
+            <h2 style="line-height: 0px;">PERSONAL INFORMATION</h2><br><br>
+                <ul>
+                    <li>Sex:  &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;<span></span>  Female</li><br>
+                    <li>Birthdate: &ThickSpace; &ThickSpace;<span></span> September 03, 2005</li><br>
+                    <li>Birthplace: &ThickSpace; &ThickSpace;<span></span>Dumaguete City Negros Oriental Provencial Hospital</li><br>
+                    <li>Heigth: &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;<span></span>  5'2"</li><br>
+                    <li> Weight: &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace;<span></span>46kg</li><br>
+                    <li>Nationality: &ThickSpace; <span></span>Filipino</li><br>
+                    <li>Religion: &ThickSpace; &ThickSpace; &ThickSpace;  <span></span>Roman Catholic</li><br>
+                </ul>
+            <br>
+            <br>
+            <h2 style="line-height: 0px;">EDUCATIONAL BACKGROUND</h2><br><br>
+             <ul>
+                <li>Tertiary Education (2023-ongoing): &ThickSpace;  &ThickSpace;<span></span>  Diploma  in Information Technology <br><br>
+                    &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;
+                    &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThinSpace; Asian College Dumaguete
+                     <br><br>
+                    &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;
+                    &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThinSpace; Dr. V. Locsin St. Dumaguete City
+                </li>
+                <br>
+                <li>Secondary Education (2017-2023):  &ThinSpace;<span></span>&ThinSpace; &ThinSpace;  Humanities and Social Sciences (Academic Strand) <br><br>
+                    &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;
+                    &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThinSpace; Tubigon High School <br> <br> &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;
+                     &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                      &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                      &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThinSpace; Tubigon Sibulan Negros Oriental
+                </li>
+                <br>
+                <li>Primary Education (2011-2017):  &ThinSpace;<span></span>  &ThinSpace; &ThinSpace; &ThinSpace; &ThinSpace; &ThinSpace;General Education<br><br>
+                    &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;
+                    &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThinSpace; Tubigon Elementary School
+                     <br><br>
+                     &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;
+                     &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                      &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;
+                      &ThickSpace; &ThickSpace;&ThickSpace;&ThickSpace; &ThickSpace; &ThickSpace;&ThickSpace;&ThinSpace; Tubigon Sibulan Negros Oriental
+                </li>
+                <br>
+               
+            </ul>
+            <br>
+            <br>
+            <h2 style="line-height: 0px;">SKILLS</h2><br><br>
+                <br>
+                <table border="1">
+                    <tr colspan="2">
+                        <td style="font-size: 30px; background-color: rgb(49, 47, 47); color:#f3eeee;" ><b>Soft Skills</b></td>
+                        <td style="font-size: 30px; background-color:rgb(49, 46, 46); color:#e7e1e1;"><b>Hard Skills</b></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>Teamwork Skills</td>
+                        <td >Profeciency in Web Designing using HTML amd CSS</a></td>
+                    </tr>
+                    <tr>
+                        <td>Problem-Solving Skills</td>
+                        <td>Familiarity with wireframing and prototyping</a></td>
+                    </tr>
+                    <tr>
+                        <td>Time Management Skills</td>
+                        <td>Proficiency in languages such as HTML, CSS, Java, and C++ basic</a></td>
+                    </tr>
+                    <tr>
+                        <td>Adaptability</td>
+                        <td>Graphic Designing using Photopea</a></td>
+                    </tr>
+                    <tr>
+                        <td>Critical Thinking Skills</td>
+                        <td>Proficiency in Microsoft Office (Word, Excel, PPT, etc.)</a></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <h2 style="line-height: 0px;">HOBBIES & TALENTS</h2><br><br>
+                    <ul>
+                        <li>Watching Dramas (Korean, Chinese, Thai, etc.)</li><br>
+                        <li>Playing Instrument (Guitar & Lyre) </li><br>
+                        <li>Listening to Music (HIllsong, Worship, Popsongs, etc.)</li><br>
+                        <li>Drawing & Sketching</li><br>
+                        <li>Dancing</li><br>
+                        <li>Graphic Designing</li><br>
+                    </ul>
+                <br>
+                <br>
+                <h2 style="line-height: 0px;">LANGUAGES</h2><br><br>
+                <ul>
+                    <li>Filipino</li><br>
+                    <li>English</li><br>
+                    <li>Cebuano</li><br>
+                </ul>
+                <br>
+                <br>
+                <h2 style="line-height: 0px;">CERTIFICATES AND AWARDS</h2><br><br>
+                <div class="proj">
+                    <img src="img2/1.jpg" alt="Certificate 1">
+                    <img src="img2/2.jpg" alt="Certificate 2">
+                    <img src="img2/3.jpg" alt="Certificate 3">
+                    <img src="img2/4.jpg" alt="Certificate 4">
+                    <img src="img2/5.jpg" alt="Certificate 5">
+                    <img src="img2/6.jpg" alt="Certificate 6">
+                    <img src="img2/7.jpg" alt="Certificate 7">
+                    <img src="img2/Content Optimization Certificate_1.jpg" alt="Content Optimization Certificate">
+                    <img src="img2/EVMS NCIII.jpg" alt="EVMS NCIII">
+                    <img src="img2/Responsive Web Design.png" alt="Responsive Web Design Certificate">
+                </div>
+            <br>
+            <h2 style="line-height: 0px;">SAMPLE PROJECTS</h2><br><br>
+            <div class="proj">
+                <img src="proj/1.jpg" alt="Project 1">
+                <img src="proj/2.jpg" alt="Project 2">
+                <img src="proj/3.jpg" alt="Project 3">
+                <img src="proj/4.jpg" alt="Project 4">
+                <img src="proj/5.jpg" alt="Project 5">
+                <img src="proj/6.jpg" alt="Project 6">
+                <img src="proj/7.jpg" alt="Project 7">
+                <img src="proj/8.jpg" alt="Project 8">
+                <img src="proj/9.jpg" alt="Project 9">
+                <img src="proj/10.jpg" alt="Project 10">
+            </div>
+        </div>
+    </section>
+
+    <div class="image-overlay" id="imageOverlay">
+        <img src="" alt="Enlarged Image" id="enlargedImage">
+    </div>
+
+    <script>
+        const projectImages = document.querySelectorAll('.proj img');
+const imageOverlay = document.getElementById('imageOverlay');
+const enlargedImage = document.getElementById('enlargedImage');
+
+const openImageOverlay = (imageUrl) => {
+    enlargedImage.src = imageUrl;
+    // Set default size (small)
+    enlargedImage.style.width = '700px';
+    enlargedImage.style.height = 'auto';
+    imageOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when overlay is active
+};
+
+const closeImageOverlay = () => {
+    imageOverlay.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+};
+
+const initializeImageClicks = () => {
+    for (let i = 0; i < projectImages.length; i++) {
+        projectImages[i].addEventListener('click', (event) => {
+            const clickedImageUrl = event.target.src;
+            openImageOverlay(clickedImageUrl);
+        });
+    }
+};
+
+// Add click event to toggle size
+enlargedImage.addEventListener('click', () => {
+    if (enlargedImage.style.width === '50px') {
+        // Revert to smaller size
+        enlargedImage.style.width = '50px';
+    } else {
+        // Make it bigger
+        enlargedImage.style.width = '50px';
+    }
+});
+
+imageOverlay.addEventListener('click', closeImageOverlay);
+document.addEventListener('DOMContentLoaded', initializeImageClicks);
+    </script>
+</body>
+</html>

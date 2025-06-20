@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alycia Mae P. Cabus - Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #686D76;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 50px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: #363232;
+        }
+        header h2 {
+            color: #fff;
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .btn-talk {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 40px; 
+            background: linear-gradient(to right, #ff9800, #f57c00);
+            border-radius: 10px;
+            border: 2px solid #f57c00;
+            font-weight: 500;
+            transition: .3s;
+            font-size: 25px;
+            position: relative;
+        }
+
+        .btn-talk:hover {
+            color: #f57c00;
+            background: transparent;
+        }
+
+        .contact-options {
+            display: none;
+            position: absolute;
+            top: 60px; 
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 200;
+        }
+
+        .contact-options a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .contact-options a:hover {
+            background-color: #f57c00;
+            color: #fff;
+        }
+
+        .home {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 50px 100px; 
+        }
+
+        .home .image-container {
+            margin-top: 8%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home .image-container img {
+            max-width: 70%;
+            border-radius: 50%;
+            border-style: ridge;
+        }
+
+        .content {
+            flex: 1;
+            color: #333;
+            margin-top: 50px; 
+        }
+
+        .content h2 {
+            font-size: 70px;
+            margin-top: 20px; 
+        }
+
+        .content h2 span {
+            color: #ffdab6; 
+            font-size: 90px;
+            text-shadow: #1a1613 0px 0px 140px;
+        }
+
+        .content h4 {
+            font-size: 2.8em;
+            color: #c27b11;
+            margin-top: 10px;
+        }
+
+        .content p {
+            padding: 20px 0 30px 0;
+            line-height: 1.6;
+            color: #d8cccc;
+            font-size: 24px;
+            text-align: justify;
+        }
+
+        .btn-group a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 45px; 
+            background: linear-gradient(to right, #ff9800, #f57c00); 
+            border-radius: 10px;
+            border: 2px solid #f57c00;
+            font-weight: 500;
+            transition: .3s;
+            font-size: 25px;
+        }
+
+        .btn-group a:hover {
+            color: #f57c00;
+            background: transparent;
+        }
+
+        h2 {
+            font-size: 50px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .image-container {
+            border-radius: 20px;
+        }
+
+        .image-container img {
+            width: 570px;
+            height: 650px;
+            margin-left: -240px;
+            display: flex;
+            justify-content: right;
+            box-shadow: #c27b11 0px 0px 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Curriculum Vitae Website<sup>&reg;</sup></h2>       
+        <div class="contact-container">
+            <a href="#" class="btn-talk" onclick="toggleContactOptions(event)">Contact Me</a>
+            <div class="contact-options" id="contactOptions">
+                <a href="mailto:cabusalycia@gmail.com">Email</a>
+                <a href="https://www.facebook.com/llychaeng35" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="image-container">
+            <img src="img/received_990124809309200.jpeg" alt="Alycia Mae P. Cabus">
+        </div>
+        <div class="content">
+            <h2>Hi! I'm</h2><br>
+            <h2><span>Alycia Mae P. Cabus</span></h2><br>
+            <h4>A Front-End Developer</h4>
+            <p>A passionate front-end developer specializing in building responsive, user-friendly web interfaces. With a keen eye for design and a strong command of modern web technologies, I transform ideas into intuitive digital experiences. Committed to writing clean, maintainable code, I thrive in collaborative environments and continuously seek to enhance my skills through learning and innovation.<br><br>Click the button below to view my Curriculum Vitae.</p>
+            <div class="btn-group">
+                <a href="cv.html">View CV</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleContactOptions(event) {
+            event.preventDefault();
+            const contactOptions = document.getElementById('contactOptions');
+            contactOptions.style.display = contactOptions.style.display === 'block' ? 'none' : 'block';
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.btn-talk')) {
+                const dropdowns = document.getElementsByClassName("contact-options");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
